@@ -1,22 +1,31 @@
 # Doviz
-- ### This development will help you convert the dollar to gold.
+- ### This development will help you convert the dollar to gold or gold to dollar.
   
-`Formula:`
+#### Formula:
 ```C#
-double money = double.Parse(Console.ReadLine()!);
+double money = Convert.ToDouble(Console.ReadLine()!);
 double convertToGold = money * "gold price today";
 ```
-`Functions:`
+#### Types:
+```C#
+int & double & string 
+```
+#### Operators:
+```C#
+if(){...}
+else(){...}
+```
+The ***if-else*** construct is able to check one or more conditions, and if the condition is not true, then execute another code or check another condition.
+#### Functions:
 ```C#
 Output to console: Console.WriteLine();
 Input from console: Console.Readline();
-Converts: double.Parse();
+Converts: Convert.ToDouble();
 ```
-`Types:`
-```C#
-double & string 
-```
-`Demo:`
+* Also in the code i used ***Escape Characters*** - replacement of control characters in the text with corresponding text substitutions.
+  
+Read more , [link](https://codebuns.com/csharp-basics/escape-sequences/)**.
+#### Demo:
 
 ![](demo/demo0.png)
 
