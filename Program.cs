@@ -15,34 +15,34 @@ namespace Doviz
             Console.Write("Choice: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
-            if(choice == 1)
+            switch(choice)
             {
-                Console.Write("Enter Gold amount: ");
-                double gold = double.Parse(Console.ReadLine()!);
+                case 1:
+                    Console.Write("Enter Gold amount: ");
+                    double gold = double.Parse(Console.ReadLine()!);
 
-                double convertToGold = gold * 63;
+                    double convertToDollar = gold * 63;
 
-                Console.WriteLine("\tConversion is in progress...");
-                Console.WriteLine($"Dollar: {convertToGold} $");
+                    Console.WriteLine("\tConversion is in progress...");
+                    Console.WriteLine($"Dollar: {convertToDollar} $");
 
-                Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
-            }
-            else if(choice == 2)
-            {
-                Console.Write("Enter Dollar amount: ");
-                double dollar = double.Parse(Console.ReadLine()!);
+                    Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
+                    break;
+                case 2:
+                    Console.Write("Enter Dollar amount: ");
+                    double dollar = double.Parse(Console.ReadLine()!);
 
-                double convertToGold = dollar * 0.016;
+                    double convertToGold = dollar * 0.016;
 
-                Console.WriteLine("\tConversion is in progress...");
-                Console.WriteLine($"Gold: {convertToGold} gramm");
+                    Console.WriteLine("\tConversion is in progress...");
+                    Console.WriteLine($"Gold: {convertToGold} gramm");
 
-                Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
-            }
-            else
-            {
-                Console.WriteLine("You have the wrong answer!");
-                Console.WriteLine("Enter \"dotnet run\" to try again");
+                    Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
+                    break;
+                    default:
+                    Console.WriteLine("You have the wrong answer!");
+                    Console.WriteLine("Enter \"dotnet run\" to try again");
+                    break;
             }
         }
     }
