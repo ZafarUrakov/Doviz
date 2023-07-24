@@ -9,4 +9,4 @@ double convertToGold = money * 0.016;
 Console.WriteLine("\tConversion is in progress...");
 Console.WriteLine($"Gold: {convertToGold} gramm");
 
-Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
+Console.WriteLine("\nEnter the word \"dotnet run\" to convert again");
