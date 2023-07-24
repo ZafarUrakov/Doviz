@@ -45,7 +45,7 @@ Also in the code i used ***Escape Characters*** - replacement of control charact
 
 ![](demo/demo3.png)
 
-6.sPress enter to create a local clone.
+6.Press enter to create a local clone.
 
 ![](demo/demo4.png)
 
