@@ -42,7 +42,7 @@ namespace Doviz
             else
             {
                 Console.WriteLine("You have the wrong answer!");
-                Console.WriteLine("Enter \"dotnet run\" to try again.");
+                Console.WriteLine("Enter \"dotnet run\" to try again");
             }
         }
     }
