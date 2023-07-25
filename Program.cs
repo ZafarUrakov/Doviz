@@ -24,8 +24,6 @@ namespace Doviz
 
                 Console.WriteLine("\tConversion is in progress...");
                 Console.WriteLine($"Dollar: {convertToGold} $");
-
-                Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
             }
             else if(choice == 2)
             {
@@ -36,13 +34,42 @@ namespace Doviz
 
                 Console.WriteLine("\tConversion is in progress...");
                 Console.WriteLine($"Gold: {convertToGold} gramm");
-
-                Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
             }
             else
             {
                 Console.WriteLine("You have the wrong answer!");
-                Console.WriteLine("Enter \"dotnet run\" to try again");
+            }
+                //Switch
+            Console.WriteLine("\nVersion with Switch\n");
+
+            switch(choice)
+            {
+                case 1:
+                    Console.Write("Enter Gold amount: ");
+                    double gold = double.Parse(Console.ReadLine()!);
+
+                    double convertToDollar = gold * 63;
+
+                    Console.WriteLine("\tConversion is in progress...");
+                    Console.WriteLine($"Dollar: {convertToDollar} $");
+
+                    Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
+                    break;
+                case 2:
+                    Console.Write("Enter Dollar amount: ");
+                    double dollar = double.Parse(Console.ReadLine()!);
+
+                    double convertToGold = dollar * 0.016;
+
+                    Console.WriteLine("\tConversion is in progress...");
+                    Console.WriteLine($"Gold: {convertToGold} gramm");
+
+                    Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
+                    break;
+                default:
+                    Console.WriteLine("You have the wrong answer!");
+                    Console.WriteLine("Enter \"dotnet run\" to try again");
+                    break;
             }
         }
     }
