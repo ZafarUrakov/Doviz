@@ -6,43 +6,56 @@ namespace Doviz
     {
         static void Main()
         {
-            Console.WriteLine(@"Want you consvert dollar to gold?
-                Then you are at the right place!");
-            
-            Console.WriteLine(@"What do you want to convert?:
-            1. Gold -> Dollar
-            2. Dollar -> Gold");
+            Console.WriteLine(@"
+            1.Enter the application
+            2.Exit");
             Console.Write("Choice: ");
-            int choice = Convert.ToInt32(Console.ReadLine());
+            int userChoice = Convert.ToInt32(Console.ReadLine()!);
 
-            switch(choice)
+            while(userChoice == 1)
             {
-                case 1:
-                    Console.Write("Enter Gold amount: ");
-                    double gold = double.Parse(Console.ReadLine()!);
+                Console.WriteLine(@"Want you consvert dollar to gold?
+        Then you are at the right place!");
+                
+                Console.WriteLine(@"
+What do you want to convert?:
+                1. Gold -> Dollar
+                2. Dollar -> Gold
+                3. Exit");
+                Console.Write("Choice: ");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                if(choice == 1 || choice == 2)
+                {
+                    switch(choice)
+                    {
+                        case 1:
+                            Console.Write("Enter Gold amount: ");
+                            double gold = double.Parse(Console.ReadLine()!);
 
-                    double convertToDollar = gold * 63;
+                            double convertToDollar = gold * 63;
 
-                    Console.WriteLine("\tConversion is in progress...");
-                    Console.WriteLine($"Dollar: {convertToDollar} $");
+                            Console.WriteLine("\tConversion is in progress...");
+                            Console.WriteLine($"Dollar: {convertToDollar} $");
+                            break;
+                        case 2:
+                            Console.Write("Enter Dollar amount: ");
+                            double dollar = double.Parse(Console.ReadLine()!);
 
-                    Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
+                            double convertToGold = dollar * 0.016;
+
+                            Console.WriteLine("\tConversion is in progress...");
+                            Console.WriteLine($"Gold: {convertToGold} gramm");
+                            break;
+                            default:
+                            Console.WriteLine("You have the wrong answer!");
+                            break;
+                    }
+                }
+                else 
+                {
+                    Console.Write("Good Bye!");
                     break;
-                case 2:
-                    Console.Write("Enter Dollar amount: ");
-                    double dollar = double.Parse(Console.ReadLine()!);
-
-                    double convertToGold = dollar * 0.016;
-
-                    Console.WriteLine("\tConversion is in progress...");
-                    Console.WriteLine($"Gold: {convertToGold} gramm");
-
-                    Console.WriteLine("\nEnter the word \"dotnet run\" to convert again.");
-                    break;
-                    default:
-                    Console.WriteLine("You have the wrong answer!");
-                    Console.WriteLine("Enter \"dotnet run\" to try again");
-                    break;
+                }
             }
         }
     }
