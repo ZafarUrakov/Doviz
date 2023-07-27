@@ -65,7 +65,7 @@ Converts: Convert.ToDouble();
 Also in the code i used ***Escape Characters*** - replacement of control characters in the text with corresponding text substitutions.Read more , [link](https://codebuns.com/csharp-basics/escape-sequences/).
 #### Demo:
 
-![](demo/demo0.png)
+![](demo/demo0.1.png)
 
 ## Release Notes
 In the [second](https://github.com/ZafarUrakov/Doviz/tree/releases/v2.0) version of the project , we used only arithmetic operations with ***input*** and ***output*** to the console and we also used logical operations ***if-else*** and ***switch***.
