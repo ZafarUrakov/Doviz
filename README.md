@@ -10,18 +10,25 @@ double convertToGold = money * "gold price today";
 ```C#
 int & double & string 
 ```
+#### Functions:
+```C#
+Output to console: Console.WriteLine();
+Input from console: Console.Readline();
+Converts: Convert.ToDouble();
+```
 #### Operators:
 ```C#
 if(){...}
 else(){...}
 ```
 The ***if-else*** construct is able to check one or more conditions, and if the condition is not true, then execute another code or check another condition.
+![](./demo/demo7.png)
 ```C#
 switch
 ```
 The ***switch*** statement provides multidirectional branching in the program.
 
-![](./demo/demo5.png)
+![](./demo/demo8.png)
 
 ```C#
 while(){...}
@@ -54,18 +61,19 @@ for (statement 1; statement 2; statement 3)
 
 **Statement 3** is executed (every time) after the code block has been executed.
 
+```C#
+try{...}
+catch(){...}
+```
+
+![](./demo/demo5.png)
+
 #### To understand more, look at the code  and try to run it!
 
-#### Functions:
-```C#
-Output to console: Console.WriteLine();
-Input from console: Console.Readline();
-Converts: Convert.ToDouble();
-```
 Also in the code i used ***Escape Characters*** - replacement of control characters in the text with corresponding text substitutions.Read more , [link](https://codebuns.com/csharp-basics/escape-sequences/).
 #### Demo:
 
-![](demo/demo0.1.png)
+![](demo/demo9.png)
 
 ## Release Notes
 In the [second](https://github.com/ZafarUrakov/Doviz/tree/releases/v2.0) version of the project , we used only arithmetic operations with ***input*** and ***output*** to the console and we also used logical operations ***if-else*** and ***switch***.
@@ -73,6 +81,8 @@ In the [second](https://github.com/ZafarUrakov/Doviz/tree/releases/v2.0) version
 As for this version , you may notice changes in the code like:
 
 - Loop operations have been added.
+- Add try-catch operations.
+- Add Jump statement goto.
 - Simplified the code.
 - Fixed the errors.
 
