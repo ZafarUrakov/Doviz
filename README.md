@@ -22,13 +22,13 @@ if(){...}
 else(){...}
 ```
 The ***if-else*** construct is able to check one or more conditions, and if the condition is not true, then execute another code or check another condition.
-![](./demo/demo7.png)
+![](./Assets/demo7.png)
 ```C#
 switch
 ```
 The ***switch*** statement provides multidirectional branching in the program.
 
-![](./demo/demo8.png)
+![](./Assets/demo8.png)
 
 ```C#
 while(){...}
@@ -45,7 +45,7 @@ while (condition)
   // code block to be executed
 }
 ```
-![](./demo/demo6.png)
+![](./Assets/demo6.png)
 
 When you know exactly how many times you want to loop through a block of code, use the ***for*** loop instead of a ***while*** loop:
 ```C#
@@ -66,14 +66,14 @@ try{...}
 catch(){...}
 ```
 
-![](./demo/demo5.png)
+![](./Assets/demo5.png)
 
 #### To understand more, look at the code  and try to run it!
 
 Also in the code i used ***Escape Characters*** - replacement of control characters in the text with corresponding text substitutions.Read more , [link](https://codebuns.com/csharp-basics/escape-sequences/).
 #### Demo:
 
-![](demo/demo9.png)
+![](Assets/demo9.png)
 
 ## Release Notes
 In the [second](https://github.com/ZafarUrakov/Doviz/tree/releases/v2.0) version of the project , we used only arithmetic operations with ***input*** and ***output*** to the console and we also used logical operations ***if-else*** and ***switch***.
@@ -92,11 +92,11 @@ Now, before you enter, the administrator will ask you.
 
 1.About the list of files,click <> Code.
 
-![](./demo/demo1.png)
+![](./Assets/demo1.png)
 
 2.Copy the URL(HTTPS) of the repository.
 
-![](demo/demo2.png)
+![](Assets/demo2.png)
 
 3.Open terminal.
 
@@ -104,10 +104,10 @@ Now, before you enter, the administrator will ask you.
 
 5.Type "***git clone***" and paste the URL copied earlier.
 
-![](demo/demo3.png)
+![](Assets/demo3.png)
 
 6.sPress enter to create a local clone.
 
-![](demo/demo4.png)
+![](Assets/demo4.png)
 
 To see other projects click **[HERE](https://github.com/ZafarUrakov)**.
